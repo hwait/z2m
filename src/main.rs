@@ -1,4 +1,4 @@
-use z2m::run;
+use z2m::startup::run;
 use std::net::TcpListener;
 
 #[tokio::main]
