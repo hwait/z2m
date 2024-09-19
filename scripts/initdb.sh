@@ -23,9 +23,6 @@ DB_HOST="${POSTGRES_HOST:=localhost}"
 if [[ -z "${SKIP_DOCKER}" ]]
 then
   docker run \
-  -e POSTGRES_USER=${DB_USER} \
-  -e POSTGRES_PASSWORD=${DB_PASSWORD} \
-  docker run \
     -e POSTGRES_USER=${DB_USER} \
     -e POSTGRES_PASSWORD=${DB_PASSWORD} \
     -e POSTGRES_DB=${DB_NAME} \
